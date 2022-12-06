@@ -54,7 +54,7 @@ public class DayTwo {
             switch (command) {
                 case "X" -> playerMove = findMove(firstMove.winsAgainst.primaryCharacter);
                 case "Y" -> {
-                    playerMove = findMove(firstMove.primaryCharacter);
+                    playerMove = firstMove;
                     sum += 3;
                 }
                 default -> {

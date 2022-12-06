@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.HashSet;
 import java.util.LinkedList;
 
 public class DaySix {
@@ -18,9 +17,7 @@ public class DaySix {
             if (previousCharacters.size() > PART_TWO)
                 previousCharacters.remove();
 
-
-            HashSet<Character> uniqueCharacters = new HashSet<>(previousCharacters);
-            if (uniqueCharacters.size() == PART_TWO)
+            if (previousCharacters.stream().distinct().count() == PART_TWO)
                 break;
         }
 
